@@ -1,0 +1,169 @@
+.body {
+  background: lightgreen;
+}
+
+.header {
+  text-align: center;
+}
+
+.wrapper-square {
+  display: grid;
+  margin-left: calc(50vw - 150px);
+}
+
+.row {
+  display: flex;
+}
+
+.rules {
+  position: absolute;
+  width: 100px;
+  top: 70px;
+  left: calc(50vw - 300px);
+}
+
+.hamster {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 170px;
+  left: calc(50vw - 300px);
+  background: url(assets/icon/hamster-norm.png) no-repeat;
+}
+
+.pole {
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+}
+
+.p1 {
+  margin-top: -20px;
+}
+
+.pole-hamster {
+  height: 48px;
+  width: 48px;
+  margin-top: 50px;
+}
+
+.sack1,
+.sack2,
+.sack3,
+.sack4,
+.sack5,
+.sack6 {
+  position: absolute;
+  top: 128px;
+  margin-left: -15px;
+}
+
+.sack2 {
+  top: 108px;
+}
+
+.sack4,
+.sack6 {
+  top: 248px;
+}
+
+.sack5 {
+  top: 228px;
+}
+
+.results {
+  position: absolute;
+  display: grid;
+  top: 80px;
+  right: calc(50vw - 320px);
+}
+
+.winner-congrats {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: black solid 1px;
+  position: absolute;
+  top: 150px;
+  font-size: 40px;
+  text-align: center;
+  left: calc(50vw - 90px);
+  background-color: rgb(236, 240, 32);
+  z-index: 5;
+  display: none;
+}
+
+.winner-congrats__button {
+  position: absolute;
+  top: 310px;
+  left: calc(50vw - 15px);
+  background-color: orangered;
+  z-index: 5;
+  display: none;
+}
+
+.black {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  top: 0px;
+  opacity: 0.8;
+  z-index: 2;
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.space {
+  height: calc(100vh - 500px);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  width: 100px;
+  color: black;
+}
+
+.logo1 {
+  background: url(assets/icon/RS.png) no-repeat;
+  background-size: auto 100%;
+  width: 300px;
+  height: 100px;
+}
+@media (max-width: 600px) {
+  .rules {
+    left: calc(50vw - 250px);
+  }
+
+  .results {
+    right: calc(50vw - 250px);
+  }
+}
+@media (max-width: 520px) {
+  .rules {
+    width: 300px;
+    left: calc(50vw - 150px);
+    top: 400px;
+  }
+}
+@media (max-width: 490px) {
+  .rules {
+    top: 470px;
+  }
+  .results {
+    right: calc(50vw - 55px);
+    top: 390px;
+  }
+  .space {
+    height: 180px;
+  }
+}
