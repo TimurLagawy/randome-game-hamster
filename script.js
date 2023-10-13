@@ -39,6 +39,19 @@ let easyLabel = document.querySelector("#easy-label");
 let mediumLabel = document.querySelector("#medium-label");
 let hardLabel = document.getElementById("hard-label");
 
+level = localStorage.getItem(level);
+function visiblePole() {
+  if (level == 6) {
+    document.querySelector("#medium").classList.remove("open1");
+    document.querySelector("#hard").classList.remove("open1");
+  } else if (level == 9) {
+    document.querySelector("#medium").classList.add("open1");
+    document.querySelector("#hard").classList.remove("open1");
+  } else if (level == 12) {
+    document.querySelector("#medium").classList.add("open1");
+    document.querySelector("#hard").classList.add("open1");
+  }
+}
 function randomePole() {
   ham1.classList.remove("active");
   ham2.classList.remove("active");
