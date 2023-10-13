@@ -41,7 +41,7 @@ pole1.addEventListener("click", () => {
 pole2.addEventListener("click", () => {
   if (ham2.classList.contains("active")) {
     audio1.play();
-    ham1.classList.remove("active");
+    ham2.classList.remove("active");
     hamsterBig.classList.add("hamsterO");
     countRes++;
     resScore.innerHTML = countRes;
@@ -50,7 +50,7 @@ pole2.addEventListener("click", () => {
 pole3.addEventListener("click", () => {
   if (ham3.classList.contains("active")) {
     audio1.play();
-    ham1.classList.remove("active");
+    ham3.classList.remove("active");
     hamsterBig.classList.add("hamsterO");
     countRes++;
     resScore.innerHTML = countRes;
@@ -59,7 +59,7 @@ pole3.addEventListener("click", () => {
 pole4.addEventListener("click", () => {
   if (ham4.classList.contains("active")) {
     audio1.play();
-    ham1.classList.remove("active");
+    ham4.classList.remove("active");
     hamsterBig.classList.add("hamsterO");
     countRes++;
     resScore.innerHTML = countRes;
@@ -68,7 +68,7 @@ pole4.addEventListener("click", () => {
 pole5.addEventListener("click", () => {
   if (ham5.classList.contains("active")) {
     audio1.play();
-    ham1.classList.remove("active");
+    ham5.classList.remove("active");
     hamsterBig.classList.add("hamsterO");
     countRes++;
     resScore.innerHTML = countRes;
@@ -77,7 +77,7 @@ pole5.addEventListener("click", () => {
 pole6.addEventListener("click", () => {
   if (ham6.classList.contains("active")) {
     audio1.play();
-    ham1.classList.remove("active");
+    ham6.classList.remove("active");
     hamsterBig.classList.add("hamsterO");
     countRes++;
     resScore.innerHTML = countRes;
