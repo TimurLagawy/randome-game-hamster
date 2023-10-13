@@ -31,6 +31,10 @@
   background: url(assets/icon/hamster-norm.png) no-repeat;
 }
 
+.hamsterO{
+  background: url(assets/icon/hamsterO.png) no-repeat;
+}
+
 .pole {
   height: 120px;
   width: 120px;
