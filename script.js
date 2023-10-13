@@ -208,18 +208,25 @@ document.querySelector("#level-easy").addEventListener("click", () => {
   mediumLabel.classList.remove("bold");
   hardLabel.classList.remove("bold");
   level = 6;
+
+  document.querySelector("#medium").classList.remove("open1");
+  document.querySelector("#hard").classList.remove("open1");
 });
 document.querySelector("#level-medium").addEventListener("click", () => {
   easyLabel.classList.remove("bold");
   mediumLabel.classList.add("bold");
   hardLabel.classList.remove("bold");
   level = 9;
+  document.querySelector("#medium").classList.add("open1");
+  document.querySelector("#hard").classList.remove("open1");
 });
 document.querySelector("#level-hard").addEventListener("click", () => {
   easyLabel.classList.remove("bold");
   mediumLabel.classList.remove("bold");
   hardLabel.classList.add("bold");
   level = 12;
+  document.querySelector("#medium").classList.add("open1");
+  document.querySelector("#hard").classList.add("open1");
 });
 black.addEventListener("click", () => {
   black.classList.remove("open");

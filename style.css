@@ -215,6 +215,10 @@
   display: block;
 }
 
+.open1 {
+  display: flex;
+}
+
 .space {
   height: calc(100vh - 500px);
 }
