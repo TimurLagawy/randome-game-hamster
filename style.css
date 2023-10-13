@@ -47,6 +47,12 @@
   height: 48px;
   width: 48px;
   margin-top: 50px;
+  transition: all 0.5s;
+}
+
+.active{
+  margin-top: 10px;
+  transition: all 0.5s;
 }
 
 .sack1,
@@ -71,6 +77,10 @@
 
 .sack5 {
   top: 228px;
+}
+
+@keyframes up{
+  0
 }
 
 .results {
