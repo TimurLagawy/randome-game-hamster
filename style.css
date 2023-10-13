@@ -17,7 +17,7 @@
 
 .rules {
   position: absolute;
-  width: 100px;
+  width: 190px;
   top: 70px;
   left: calc(50vw - 300px);
 }
@@ -31,8 +31,12 @@
   background: url(assets/icon/hamster-norm.png) no-repeat;
 }
 
-.hamsterO{
+.hamsterO {
   background: url(assets/icon/hamsterO.png) no-repeat;
+}
+
+.hamster-laught {
+  background: url(assets/icon/hamster1.png) no-repeat;
 }
 
 .pole {
@@ -54,7 +58,7 @@
   transition: all 0.5s;
 }
 
-.active{
+.active {
   margin-top: 10px;
   transition: all 0.5s;
 }
@@ -81,10 +85,6 @@
 
 .sack5 {
   top: 228px;
-}
-
-@keyframes up{
-  0
 }
 
 .results {

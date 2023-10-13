@@ -14,6 +14,9 @@ let hamsterBig = document.querySelector("#hamster-big");
 let countRes = 0;
 let resScore = document.querySelector("#results-score");
 let audio1 = document.querySelector("#audio");
+let audio2 = document.querySelector("#audio2");
+let resultsHamster = document.querySelector("#results-hamster");
+let countHam = 0;
 
 function randomePole() {
   ham1.classList.remove("active");
@@ -26,6 +29,9 @@ function randomePole() {
   let randomNum = Math.floor(Math.random() * 6) + 1;
   let numPole = document.getElementById("ham" + randomNum);
   numPole.classList.add("active");
+  countHam++;
+  resultsHamster.innerHTML = countHam;
+  gameOver();
 }
 setInterval(randomePole, 1500);
 
@@ -83,3 +89,10 @@ pole6.addEventListener("click", () => {
     resScore.innerHTML = countRes;
   }
 });
+function gameOver() {
+  if (countRes < countHam - 20) {
+    hamsterBig.classList.add("hamster-laught");
+    audio2.play();
+    alert("GAME OVER");
+  }
+}
