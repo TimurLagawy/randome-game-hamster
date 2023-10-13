@@ -19,7 +19,7 @@
   position: absolute;
   width: 190px;
   top: 70px;
-  left: calc(50vw - 300px);
+  left: calc(50vw - 320px);
 }
 
 .hamster {
@@ -68,7 +68,13 @@
 .sack3,
 .sack4,
 .sack5,
-.sack6 {
+.sack6,
+.sack7,
+.sack8,
+.sack9,
+.sack10,
+.sack11,
+.sack12 {
   position: absolute;
   top: 128px;
   margin-left: -15px;
@@ -87,11 +93,33 @@
   top: 228px;
 }
 
+.sack7,
+.sack9 {
+  top: 368px;
+}
+
+.sack8 {
+  top: 348px;
+}
+
+.sack5 {
+  top: 228px;
+}
+
+.sack10,
+.sack12 {
+  top: 488px;
+}
+
+.sack11 {
+  top: 468px;
+}
+
 .results {
   position: absolute;
   display: grid;
   top: 80px;
-  right: calc(50vw - 320px);
+  left: calc(50vw + 220px);
 }
 
 .winner-congrats {
