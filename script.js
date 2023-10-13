@@ -31,6 +31,8 @@ let audio3 = document.querySelector("#audio3");
 let resultsHamster = document.querySelector("#results-hamster");
 let countHam = 0;
 let level = 6;
+let options = document.querySelector("#options");
+let black = document.querySelector("#black");
 
 function randomePole() {
   ham1.classList.remove("active");
@@ -169,6 +171,10 @@ pole12.addEventListener("click", () => {
     countRes++;
     resScore.innerHTML = countRes;
   }
+});
+
+options.addEventListener("click", () => {
+  black.classList.add("open");
 });
 function gameOver() {
   if (countRes < countHam - 20) {

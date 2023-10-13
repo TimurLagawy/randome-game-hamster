@@ -120,6 +120,17 @@
   display: none;
 }
 
+.options {
+  position: absolute;
+  top: 20px;
+  left: calc(50vw + 220px);
+  height: 30px;
+  width: 30px;
+  background: url(assets/icon/tooth-gear.png) no-repeat;
+  background-size: auto 100%;
+  cursor: pointer;
+}
+
 .results {
   position: absolute;
   display: grid;
