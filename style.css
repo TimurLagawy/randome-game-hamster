@@ -175,8 +175,13 @@
 }
 
 .level {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 50px;
+  margin-left: 130px;
+}
+
+.level-wraper {
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 .bold {
