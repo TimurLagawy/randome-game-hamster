@@ -162,6 +162,18 @@
   display: none;
 }
 
+.options-window {
+  position: absolute;
+  top: 40px;
+  left: calc(50vw - 150px);
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background: white;
+  z-index: 3;
+  display: none;
+}
+
 .black {
   position: absolute;
   width: 100vw;

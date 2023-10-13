@@ -33,6 +33,7 @@ let countHam = 0;
 let level = 6;
 let options = document.querySelector("#options");
 let black = document.querySelector("#black");
+let optionsWindow = document.querySelector("#options-window");
 
 function randomePole() {
   ham1.classList.remove("active");
@@ -175,6 +176,11 @@ pole12.addEventListener("click", () => {
 
 options.addEventListener("click", () => {
   black.classList.add("open");
+  optionsWindow.classList.add("open");
+});
+black.addEventListener("click", () => {
+  black.classList.remove("open");
+  optionsWindow.classList.addremove("open");
 });
 function gameOver() {
   if (countRes < countHam - 20) {
