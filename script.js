@@ -34,6 +34,7 @@ let level = 6;
 let options = document.querySelector("#options");
 let black = document.querySelector("#black");
 let optionsWindow = document.querySelector("#options-window");
+let start = document.querySelector("#start");
 
 function randomePole() {
   ham1.classList.remove("active");
@@ -57,7 +58,6 @@ function randomePole() {
   melodyGame();
   gameOver();
 }
-//setInterval(randomePole, 1500);
 
 function melodyGame() {
   audio3.play();
@@ -178,9 +178,31 @@ options.addEventListener("click", () => {
   black.classList.add("open");
   optionsWindow.classList.add("open");
 });
+setInterval(function () {
+  if (start.classList.contains("pause")) {
+    randomePole();
+  } else if (start.classList.contains("begin")) {
+  }
+}, 1500);
+start.addEventListener("click", () => {
+  if (start.classList.contains("pause")) {
+    start.innerHTML = "Start";
+    start.classList.add("begin");
+    start.classList.remove("pause");
+  } else if (start.classList.contains("begin")) {
+    start.innerHTML = "Pause";
+    start.classList.remove("begin");
+    start.classList.add("pause");
+  }
+});
+function startGame() {
+  if (start.classList.contains("begin")) {
+  } else if (start.classList.contains("pause")) {
+  }
+}
 black.addEventListener("click", () => {
   black.classList.remove("open");
-  optionsWindow.classList.addremove("open");
+  optionsWindow.classList.remove("open");
 });
 function gameOver() {
   if (countRes < countHam - 20) {
