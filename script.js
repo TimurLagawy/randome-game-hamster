@@ -35,6 +35,9 @@ let options = document.querySelector("#options");
 let black = document.querySelector("#black");
 let optionsWindow = document.querySelector("#options-window");
 let start = document.querySelector("#start");
+let easyLabel = document.querySelector("#easy-label");
+let mediumLabel = document.querySelector("#medium-label");
+let hardLabel = document.getElementById("hard-label");
 
 function randomePole() {
   ham1.classList.remove("active");
@@ -200,6 +203,21 @@ function startGame() {
   } else if (start.classList.contains("pause")) {
   }
 }
+document.querySelector("#level-easy").addEventListener("click", () => {
+  easyLabel.classList.add("bold");
+  mediumLabel.classList.remove("bold");
+  hardLabel.classList.remove("bold");
+});
+document.querySelector("#level-medium").addEventListener("click", () => {
+  easyLabel.classList.remove("bold");
+  mediumLabel.classList.add("bold");
+  hardLabel.classList.remove("bold");
+});
+document.querySelector("#level-hard").addEventListener("click", () => {
+  easyLabel.classList.remove("bold");
+  mediumLabel.classList.remove("bold");
+  hardLabel.classList.add("bold");
+});
 black.addEventListener("click", () => {
   black.classList.remove("open");
   optionsWindow.classList.remove("open");
