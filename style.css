@@ -115,6 +115,11 @@
   top: 468px;
 }
 
+.row3,
+.row4 {
+  display: none;
+}
+
 .results {
   position: absolute;
   display: grid;

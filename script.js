@@ -30,6 +30,7 @@ let audio2 = document.querySelector("#audio2");
 let audio3 = document.querySelector("#audio3");
 let resultsHamster = document.querySelector("#results-hamster");
 let countHam = 0;
+let level = 6;
 
 function randomePole() {
   ham1.classList.remove("active");
@@ -45,7 +46,7 @@ function randomePole() {
   ham11.classList.remove("active");
   ham12.classList.remove("active");
   hamsterBig.classList.remove("hamsterO");
-  let randomNum = Math.floor(Math.random() * 12) + 1;
+  let randomNum = Math.floor(Math.random() * level) + 1;
   let numPole = document.getElementById("ham" + randomNum);
   numPole.classList.add("active");
   countHam++;
@@ -53,7 +54,7 @@ function randomePole() {
   melodyGame();
   gameOver();
 }
-setInterval(randomePole, 1500);
+//setInterval(randomePole, 1500);
 
 function melodyGame() {
   audio3.play();
