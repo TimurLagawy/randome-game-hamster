@@ -89,8 +89,11 @@ function randomePole() {
 }
 
 function melodyGame() {
-  audio3.play();
-  audio3.volume = 0.2;
+  if (localStorage.getItem("audio3") == 1) {
+    audio3.play();
+    audio3.volume = 0.2;
+  } else {
+  }
 }
 
 pole1.addEventListener("click", () => {
@@ -221,10 +224,12 @@ start.addEventListener("click", () => {
     start.innerHTML = "Start";
     start.classList.add("begin");
     start.classList.remove("pause");
+    musOff();
   } else if (start.classList.contains("begin")) {
     start.innerHTML = "Pause";
     start.classList.remove("begin");
     start.classList.add("pause");
+    musOff();
   }
 });
 /*function startGame() {
@@ -262,20 +267,20 @@ let musicOff = document.querySelector("#music-off");
 musicOn.addEventListener("click", () => {
   document.querySelector("#on-label").classList.add("bold");
   document.querySelector("#off-label").classList.remove("bold");
-  audio3.play();
-  localStorage.setItem("audio3", 0);
+  melodyGame();
+  localStorage.setItem("audio3", 1);
 });
 musicOff.addEventListener("click", () => {
   document.querySelector("#off-label").classList.add("bold");
   document.querySelector("#on-label").classList.remove("bold");
   audio3.pause();
-  localStorage.setItem("audio3", 1);
+  localStorage.setItem("audio3", 0);
 });
 function musOff() {
   if (localStorage.getItem("audio3") == 0) {
     musicOff.click();
   } else {
-    musicOn.click;
+    musicOn.click();
   }
 }
 musOff();
