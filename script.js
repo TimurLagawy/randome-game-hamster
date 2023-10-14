@@ -38,8 +38,19 @@ let start = document.querySelector("#start");
 let easyLabel = document.querySelector("#easy-label");
 let mediumLabel = document.querySelector("#medium-label");
 let hardLabel = document.getElementById("hard-label");
-
 let level = localStorage.getItem("level");
+
+function clickLevel() {
+  if (level == 6) {
+    document.querySelector("#level-easy").click();
+  } else if (level == 9) {
+    document.querySelector("#level-medium").click();
+  } else if (level == 12) {
+    document.querySelector("#level-hard").click();
+  }
+}
+
+clickLevel();
 
 function visiblePole() {
   if (level == 6) {
