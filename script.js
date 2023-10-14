@@ -30,7 +30,7 @@ let audio2 = document.querySelector("#audio2");
 let audio3 = document.querySelector("#audio3");
 let resultsHamster = document.querySelector("#results-hamster");
 let countHam = 0;
-let level = 6;
+
 let options = document.querySelector("#options");
 let black = document.querySelector("#black");
 let optionsWindow = document.querySelector("#options-window");
@@ -39,7 +39,7 @@ let easyLabel = document.querySelector("#easy-label");
 let mediumLabel = document.querySelector("#medium-label");
 let hardLabel = document.getElementById("hard-label");
 
-level = localStorage.getItem(level);
+let level = localStorage.getItem("level");
 
 function visiblePole() {
   if (level == 6) {
@@ -53,6 +53,7 @@ function visiblePole() {
     document.querySelector("#hard").classList.add("open1");
   }
 }
+visiblePole();
 function randomePole() {
   ham1.classList.remove("active");
   ham2.classList.remove("active");
@@ -194,6 +195,9 @@ pole12.addEventListener("click", () => {
 options.addEventListener("click", () => {
   black.classList.add("open");
   optionsWindow.classList.add("open");
+  start.innerHTML = "Start";
+  start.classList.add("begin");
+  start.classList.remove("pause");
 });
 setInterval(function () {
   if (start.classList.contains("pause")) {
