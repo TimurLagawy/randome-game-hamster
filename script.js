@@ -40,6 +40,9 @@ let easyLabel = document.querySelector("#easy-label");
 let mediumLabel = document.querySelector("#medium-label");
 let hardLabel = document.getElementById("hard-label");
 let level = localStorage.getItem("level");
+let musicOn = document.querySelector("#music-on");
+let musicOff = document.querySelector("#music-off");
+let btnRestart = document.querySelector("#winner-congrats__button");
 
 function clickLevel() {
   if (level == 6) {
@@ -233,11 +236,7 @@ start.addEventListener("click", () => {
     musOff();
   }
 });
-/*function startGame() {
-  if (start.classList.contains("begin")) {
-  } else if (start.classList.contains("pause")) {
-  }
-}*/
+
 document.querySelector("#level-easy").addEventListener("click", () => {
   easyLabel.classList.add("bold");
   mediumLabel.classList.remove("bold");
@@ -262,8 +261,6 @@ document.querySelector("#level-hard").addEventListener("click", () => {
   visiblePole();
   localStorage.setItem("level", 12);
 });
-let musicOn = document.querySelector("#music-on");
-let musicOff = document.querySelector("#music-off");
 
 musicOn.addEventListener("click", () => {
   document.querySelector("#on-label").classList.add("bold");
@@ -277,6 +274,7 @@ musicOff.addEventListener("click", () => {
   audio3.pause();
   localStorage.setItem("audio3", 0);
 });
+
 function musOff() {
   if (localStorage.getItem("audio3") == 0) {
     musicOff.click();
@@ -293,6 +291,7 @@ black.addEventListener("click", () => {
 document.querySelector("#level-x").addEventListener("click", () => {
   black.click();
 });
+
 function gameOver() {
   if (countRes < countHam - 20) {
     hamsterBig.classList.add("hamster-laught");
@@ -300,6 +299,10 @@ function gameOver() {
     audio2.play();
     document.querySelector("#winner-congrats").classList.add("open");
     black1.classList.add("open");
-    document.querySelector("#winner-congrats__button").classList.add("open");
+    btnRestart.classList.add("open");
   }
 }
+
+btnRestart.addEventListener("click", () => {
+  location.reload();
+});
