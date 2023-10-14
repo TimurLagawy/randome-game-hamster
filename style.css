@@ -179,6 +179,16 @@
   margin-left: 130px;
 }
 
+.level-x {
+  height: 20px;
+  width: 20px;
+  background: url(assets/icon/x.png) no-repeat;
+  background-size: auto 100%;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 100px;
+}
+
 .level-wraper {
   margin-left: 50px;
   margin-top: 10px;
