@@ -227,11 +227,11 @@ start.addEventListener("click", () => {
     start.classList.add("pause");
   }
 });
-function startGame() {
+/*function startGame() {
   if (start.classList.contains("begin")) {
   } else if (start.classList.contains("pause")) {
   }
-}
+}*/
 document.querySelector("#level-easy").addEventListener("click", () => {
   easyLabel.classList.add("bold");
   mediumLabel.classList.remove("bold");
@@ -256,6 +256,30 @@ document.querySelector("#level-hard").addEventListener("click", () => {
   visiblePole();
   localStorage.setItem("level", 12);
 });
+let musicOn = document.querySelector("#music-on");
+let musicOff = document.querySelector("#music-off");
+
+musicOn.addEventListener("click", () => {
+  document.querySelector("#on-label").classList.add("bold");
+  document.querySelector("#off-label").classList.remove("bold");
+  audio3.play();
+  localStorage.setItem("audio3", 0);
+});
+musicOff.addEventListener("click", () => {
+  document.querySelector("#off-label").classList.add("bold");
+  document.querySelector("#on-label").classList.remove("bold");
+  audio3.pause();
+  localStorage.setItem("audio3", 1);
+});
+function musOff() {
+  if (localStorage.getItem("audio3") == 0) {
+    musicOff.click();
+  } else {
+    musicOn.click;
+  }
+}
+musOff();
+
 black.addEventListener("click", () => {
   black.classList.remove("open");
   optionsWindow.classList.remove("open");
