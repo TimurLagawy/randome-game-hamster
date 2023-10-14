@@ -300,6 +300,7 @@ function gameOver() {
     document.querySelector("#winner-congrats").classList.add("open");
     black1.classList.add("open");
     btnRestart.classList.add("open");
+    document.querySelector("#winner-record").innerHTML = countRes;
   }
 }
 
