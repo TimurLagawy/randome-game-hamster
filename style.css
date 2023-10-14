@@ -37,6 +37,7 @@
 
 .hamster-laught {
   background: url(assets/icon/hamster1.png) no-repeat;
+  z-index: 3;
 }
 
 .pole {
@@ -218,7 +219,8 @@
   cursor: pointer;
 }
 
-.black {
+.black,
+.black1 {
   position: absolute;
   width: 100vw;
   height: 100vh;

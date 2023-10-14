@@ -33,6 +33,7 @@ let countHam = 0;
 
 let options = document.querySelector("#options");
 let black = document.querySelector("#black");
+let black1 = document.querySelector("#black1");
 let optionsWindow = document.querySelector("#options-window");
 let start = document.querySelector("#start");
 let easyLabel = document.querySelector("#easy-label");
@@ -297,6 +298,8 @@ function gameOver() {
     hamsterBig.classList.add("hamster-laught");
     audio3.pause();
     audio2.play();
-    alert("GAME OVER");
+    document.querySelector("#winner-congrats").classList.add("open");
+    black1.classList.add("open");
+    document.querySelector("#winner-congrats__button").classList.add("open");
   }
 }
