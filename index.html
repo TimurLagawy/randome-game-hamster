@@ -84,7 +84,7 @@
     <div class="options-window" id="options-window">
 <div class="level">Level</div>
 <div class="level-wraper">
-  <label class="easy bold" id="easy-label">
+  <label class="easy" id="easy-label">
     <input type="radio" name="level-change" checked id="level-easy">easy
   </label>
   <label class="medium" id="medium-label">
@@ -95,7 +95,15 @@
   </label>
   
 </div>
-<div>Music</div>
+<div class="music">Music</div>
+<div class="music-wraper">
+  <label class="on" id="on-label">
+    <input type="radio" name="music-change" checked id="music-on">on
+  </label>
+  <label class="off" id="off-label">
+    <input type="radio" name="music-change" id="music-off">off
+  </label>
+</div>
     </div>
     <button class="start begin" id="start">Start</button>
     <audio id="audio" src="assets/audio/audio-editor-output.mp3" type="audio/mpeg">

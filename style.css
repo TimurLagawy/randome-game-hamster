@@ -188,6 +188,14 @@
   font-weight: bold;
 }
 
+.music {
+  margin-left: 130px;
+}
+
+.on {
+  margin-left: 105px;
+}
+
 .start {
   height: 30px;
   width: 50px;
