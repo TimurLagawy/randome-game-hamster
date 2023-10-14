@@ -289,6 +289,9 @@ black.addEventListener("click", () => {
   black.classList.remove("open");
   optionsWindow.classList.remove("open");
 });
+document.querySelector("#level-x").addEventListener("click", () => {
+  black.click();
+});
 function gameOver() {
   if (countRes < countHam - 20) {
     hamsterBig.classList.add("hamster-laught");
