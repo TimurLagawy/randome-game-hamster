@@ -320,3 +320,16 @@ btnRestart.addEventListener("click", () => {
   );
   location.reload();
 });
+
+document.querySelector("#previous").innerHTML = [
+  localStorage.getItem("winner1"),
+  localStorage.getItem("winner2"),
+  localStorage.getItem("winner3"),
+  localStorage.getItem("winner4"),
+  localStorage.getItem("winner5"),
+  localStorage.getItem("winner6"),
+  localStorage.getItem("winner7"),
+  localStorage.getItem("winner8"),
+  localStorage.getItem("winner9"),
+  localStorage.getItem("winner10"),
+].join("; \n ");
