@@ -353,5 +353,6 @@
 
   .header {
     margin-left: calc(50vw - 120px);
+    white-space: nowrap;
   }
 }
