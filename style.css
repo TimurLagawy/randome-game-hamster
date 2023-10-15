@@ -146,12 +146,16 @@
   border: black solid 1px;
   position: absolute;
   top: 150px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   left: calc(50vw - 90px);
   background-color: rgb(236, 240, 32);
   z-index: 5;
   display: none;
+}
+
+.winner-congrats__input {
+  font-size: 20px;
 }
 
 .winner-congrats__button {

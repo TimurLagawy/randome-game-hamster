@@ -305,5 +305,18 @@ function gameOver() {
 }
 
 btnRestart.addEventListener("click", () => {
+  localStorage.setItem("winner10", localStorage.getItem("winner9"));
+  localStorage.setItem("winner9", localStorage.getItem("winner8"));
+  localStorage.setItem("winner8", localStorage.getItem("winner7"));
+  localStorage.setItem("winner7", localStorage.getItem("winner6"));
+  localStorage.setItem("winner6", localStorage.getItem("winner5"));
+  localStorage.setItem("winner5", localStorage.getItem("winner4"));
+  localStorage.setItem("winner4", localStorage.getItem("winner3"));
+  localStorage.setItem("winner3", localStorage.getItem("winner2"));
+  localStorage.setItem("winner2", localStorage.getItem("winner1"));
+  localStorage.setItem(
+    "winner1",
+    document.querySelector("#winner-input").value + ":  " + countRes
+  );
   location.reload();
 });
