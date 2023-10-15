@@ -321,15 +321,76 @@ btnRestart.addEventListener("click", () => {
   location.reload();
 });
 
-document.querySelector("#previous").innerHTML = [
-  localStorage.getItem("winner1"),
-  localStorage.getItem("winner2"),
-  localStorage.getItem("winner3"),
-  localStorage.getItem("winner4"),
-  localStorage.getItem("winner5"),
-  localStorage.getItem("winner6"),
-  localStorage.getItem("winner7"),
-  localStorage.getItem("winner8"),
-  localStorage.getItem("winner9"),
-  localStorage.getItem("winner10"),
-].join("; \n ");
+function addResults() {
+  let res1;
+  if (localStorage.getItem("winner1") !== "null") {
+    res1 = localStorage.getItem("winner1");
+  } else {
+    res1 = 0;
+  }
+  document.querySelector("#res1").innerHTML = res1;
+  let res2;
+  if (localStorage.getItem("winner2") !== "null") {
+    res2 = localStorage.getItem("winner2");
+  } else {
+    res2 = 0;
+  }
+  document.querySelector("#res2").innerHTML = res2;
+  let res3;
+  if (localStorage.getItem("winner3") !== "null") {
+    res3 = localStorage.getItem("winner3");
+  } else {
+    res3 = 0;
+  }
+  document.querySelector("#res3").innerHTML = res3;
+  let res4 = 0;
+  if (localStorage.getItem("winner4") !== "null") {
+    res4 = localStorage.getItem("winner4");
+  } else {
+    res4 = 0;
+  }
+  document.querySelector("#res4").innerHTML = res4;
+  let res5 = 0;
+  if (localStorage.getItem("winner5") !== "null") {
+    res5 = localStorage.getItem("winner5");
+  } else {
+    res5 = 0;
+  }
+  document.querySelector("#res5").innerHTML = res5;
+  let res6 = 0;
+  if (localStorage.getItem("winner6") !== "null") {
+    res6 = localStorage.getItem("winner6");
+  } else {
+    res6 = 0;
+  }
+  document.querySelector("#res6").innerHTML = res6;
+  let res7;
+  if (localStorage.getItem("winner7") !== "null") {
+    res7 = localStorage.getItem("winner7");
+  } else {
+    res7 = 0;
+  }
+  document.querySelector("#res7").innerHTML = res7;
+  let res8;
+  if (localStorage.getItem("winner8") !== "null") {
+    res8 = localStorage.getItem("winner8");
+  } else {
+    res8 = 0;
+  }
+  document.querySelector("#res8").innerHTML = res8;
+  let res9;
+  if (localStorage.getItem("winner9") !== "null") {
+    res9 = localStorage.getItem("winner9");
+  } else {
+    res9 = 0;
+  }
+  document.querySelector("#res9").innerHTML = res9;
+  let res10;
+  if (localStorage.getItem("winner10") !== "null") {
+    res10 = localStorage.getItem("winner10");
+  } else {
+    res10 = 0;
+  }
+  document.querySelector("#res10").innerHTML = res10;
+}
+addResults();
