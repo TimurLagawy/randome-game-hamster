@@ -220,7 +220,8 @@
   margin-left: 105px;
 }
 
-.start {
+.start,
+.another-game {
   height: 30px;
   width: 50px;
   border-radius: 5px;
@@ -250,6 +251,17 @@
 
 .open1 {
   display: flex;
+}
+
+.another-game {
+  height: 40px;
+  width: 50px;
+  top: 150px;
+}
+
+.another-game__btn {
+  color: white;
+  text-decoration: none;
 }
 
 .space {
