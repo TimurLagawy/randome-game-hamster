@@ -139,8 +139,13 @@
   left: calc(50vw + 220px);
 }
 
+.header-previous {
+  margin-left: 77px;
+}
+
 .previous {
   display: grid;
+  margin-left: 20px;
 }
 
 .winner-congrats {
