@@ -6,155 +6,230 @@
     <title>js30#3.2 Game by Timur Lagawy</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/favicon/hamster.png" />
-   
   </head>
   <body class="body">
     <main>
       <h1 class="header">Catch the hamster!</h1>
-    <div class="wrapper-square">
-      <div class="row">
-        <div class="pole" id="pole1">
-          <img class="sack1" src="assets/icon/sack.png" alt="sack">     
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham1">               
+      <div class="wrapper-square">
+        <div class="row">
+          <div class="pole" id="pole1">
+            <img class="sack1" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham1"
+            />
+          </div>
+          <div class="pole p1" id="pole2">
+            <img class="sack2" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham2"
+            />
+          </div>
+          <div class="pole" id="pole3">
+            <img class="sack3" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham3"
+            />
+          </div>
         </div>
-        <div class="pole  p1" id="pole2">
-          <img class="sack2" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham2">
+        <div class="row">
+          <div class="pole" id="pole4">
+            <img class="sack4" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham4"
+            />
+          </div>
+          <div class="pole p1" id="pole5">
+            <img class="sack5" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham5"
+            />
+          </div>
+          <div class="pole" id="pole6">
+            <img class="sack6" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham6"
+            />
+          </div>
         </div>
-        <div class="pole" id="pole3">
-          <img class="sack3" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham3">
+        <div class="row3" id="medium">
+          <div class="pole" id="pole7">
+            <img class="sack7" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham7"
+            />
+          </div>
+          <div class="pole p1" id="pole8">
+            <img class="sack8" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham8"
+            />
+          </div>
+          <div class="pole" id="pole9">
+            <img class="sack9" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham9"
+            />
+          </div>
+        </div>
+        <div class="row4" id="hard">
+          <div class="pole" id="pole10">
+            <img class="sack10" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham10"
+            />
+          </div>
+          <div class="pole p1" id="pole11">
+            <img class="sack11" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham11"
+            />
+          </div>
+          <div class="pole" id="pole12">
+            <img class="sack12" src="assets/icon/sack.png" alt="sack" />
+            <img
+              class="pole-hamster"
+              src="assets/icon/litte-hamster.png"
+              alt="little hamster"
+              id="ham12"
+            />
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="pole" id="pole4">
-          <img class="sack4" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham4">
-        </div>
-        <div class="pole p1" id="pole5">
-          <img class="sack5" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham5">
-        </div>
-        <div class="pole" id="pole6">
-          <img class="sack6" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham6">
-        </div>
+      <div class="results">
+        <span>Results:</span>
+        <span>Score: <span class="results-x" id="results-score">0</span></span>
+        <span
+          >Hamsters: <span class="results-o" id="results-hamster">0</span></span
+        >
       </div>
-      <div class="row3" id="medium">
-        <div class="pole" id="pole7">
-          <img class="sack7" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham7">
-        </div>
-        <div class="pole p1" id="pole8">
-          <img class="sack8" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham8">
-        </div>
-        <div class="pole" id="pole9">
-          <img class="sack9" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham9">
-        </div>
+      <div class="rules">
+        You must 'click' to hamster for catch it. If you don't catch it more 20
+        times, you Game over!
       </div>
-      <div class="row4" id="hard">
-        <div class="pole" id="pole10">
-          <img class="sack10" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham10">
-        </div>
-        <div class="pole p1" id="pole11">
-          <img class="sack11" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham11">
-        </div>
-        <div class="pole" id="pole12">
-          <img class="sack12" src="assets/icon/sack.png" alt="sack">
-          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster" id="ham12">
-        </div>
-      </div>
-    </div>
-    <div class="results">
-    <span>Results:</span>
-    <span>Score:   <span class="results-x" id="results-score">0</span></span>
-    <span>Hamsters:   <span class="results-o" id="results-hamster">0</span></span>
-  </div>
-  <div class="rules">You must 'click' to hamster for catch it. If you don't catch it more 20 times, you Game over!</div>
-  <div class="hamster" id="hamster-big"></div>
-    <div class="space"></div>
-    <div class="winner-congrats" id="winner-congrats">
-      <div >GAME OVER</div>
-      <span class="winner-your">your record:<span class="winner-record" id="winner-record">99999</span></span>
-      <span class="winner-congrats__input">enter your name</span>
-      <input type="text" size="20" maxlength="20" class="winner-input" id="winner-input" autocomplete="off">
-    
-    </div>
-    <button class="winner-congrats__button " id="winner-congrats__button">Restart</button>
-    <div class="black " id="black"></div>
-    <div class="black1 " id="black1"></div>
-    <div class="options" id="options"></div>
-    <div class="options-window" id="options-window">
-<div class="level">Level<span class="level-x" id="level-x"></span></div>
-<div class="level-wraper">
-  <label class="easy" id="easy-label">
-    <input type="radio" name="level-change" checked id="level-easy">easy
-  </label>
-  <label class="medium" id="medium-label">
-    <input type="radio" name="level-change" id="level-medium">medium
-  </label>
-  <label class="hard" id="hard-label" >
-    <input type="radio" name="level-change" id="level-hard">hard
-  </label>
-  
-</div>
-<div class="music">Music</div>
-<div class="music-wraper">
-  <label class="on" id="on-label">
-    <input type="radio" name="music-change" checked id="music-on">on
-  </label>
-  <label class="off" id="off-label">
-    <input type="radio" name="music-change" id="music-off">off
-  </label>
-</div>
-<div class="header-previous">Your previous results:</div>
-<div class="previous" id="previous">
-  <span id="res1"></span>
-  <span id="res2"></span>
-  <span id="res3"></span>
-  <span id="res4"></span>
-  <span id="res5"></span>
-  <span id="res6"></span>
-  <span id="res7"></span>
-  <span id="res8"></span>
-  <span id="res9"></span>
-  <span id="res10"></span>
-</div>
+      <div class="hamster" id="hamster-big"></div>
 
-    </div>
-    <button class="another-game">
-      <a href="http://x-o-game-timurlagawy.netlify.app" class="another-game__btn">X-O game</a></button>
-    <button class="start begin" id="start">Start</button>
-    <audio id="audio" src="assets/audio/audio-editor-output.mp3" type="audio/mpeg">
-      <source src="track.ogg" type="audio/ogg" />
-      <source src="assets/audio/audio-editor-output.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="audio2" src="assets/audio/luaght.mp3" type="audio/mpeg">
-      <source src="track.ogg" type="audio/ogg" />
-      <source src="assets/audio/luaght.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="audio3" src="assets/audio/piano.mp3" type="audio/mpeg" loop="loop">
-      <source src="track.ogg" type="audio/ogg" />
-      <source src="assets/audio/piano.mp3" type="audio/mpeg">
-    </audio>
-  </main>
-    
-    <div class="footer">
-      <span class="footer-link">2023</span>
-      <div class="footer-link-wraper">
-        <a class="footer-link2" href="https://rs.school/js-stage0/"
-          ><div class="logo1"></div
-        ></a>
+      <div class="winner-congrats" id="winner-congrats">
+        <div>GAME OVER</div>
+        <span class="winner-your"
+          >your record:<span class="winner-record" id="winner-record"></span
+        ></span>
+        <span class="winner-congrats__input">enter your name</span>
+        <input
+          type="text"
+          size="20"
+          maxlength="20"
+          class="winner-input"
+          id="winner-input"
+          autocomplete="off"
+        />
       </div>
+      <button class="winner-congrats__button" id="winner-congrats__button">
+        Restart
+      </button>
+      <div class="black" id="black"></div>
+      <div class="black1" id="black1"></div>
+      <div class="options" id="options"></div>
+      <div class="options-window" id="options-window">
+        <div class="level">Level<span class="level-x" id="level-x"></span></div>
+        <div class="level-wraper">
+          <label class="easy" id="easy-label">
+            <input
+              type="radio"
+              name="level-change"
+              checked
+              id="level-easy"
+            />easy
+          </label>
+          <label class="medium" id="medium-label">
+            <input type="radio" name="level-change" id="level-medium" />medium
+          </label>
+          <label class="hard" id="hard-label">
+            <input type="radio" name="level-change" id="level-hard" />hard
+          </label>
+        </div>
+        <div class="music">Music</div>
+        <div class="music-wraper">
+          <label class="on" id="on-label">
+            <input type="radio" name="music-change" checked id="music-on" />on
+          </label>
+          <label class="off" id="off-label">
+            <input type="radio" name="music-change" id="music-off" />off
+          </label>
+        </div>
+        <div class="header-previous">Your previous results:</div>
+        <div class="previous" id="previous">
+          <span id="res1"></span>
+          <span id="res2"></span>
+          <span id="res3"></span>
+          <span id="res4"></span>
+          <span id="res5"></span>
+          <span id="res6"></span>
+          <span id="res7"></span>
+          <span id="res8"></span>
+          <span id="res9"></span>
+          <span id="res10"></span>
+        </div>
+      </div>
+      <div class="another-game">
+        <a
+          href="http://x-o-game-timurlagawy.netlify.app"
+          class="another-game__btn"
+          >X-O<br />game</a
+        >
+      </div>
+      <button class="start begin" id="start">Start</button>
+      <audio id="audio" src="assets/audio/audio-editor-output.mp3"></audio>
+      <audio id="audio2" src="assets/audio/luaght.mp3"></audio>
+      <audio id="audio3" src="assets/audio/piano.mp3" loop="loop"></audio>
+    </main>
+    <footer>
+      <div class="space" id="space"></div>
+      <div class="footer">
+        <span class="footer-link">2023</span>
+        <div class="footer-link-wraper">
+          <a class="footer-link2" href="https://rs.school/js-stage0/"
+            ><div class="logo1"></div
+          ></a>
+        </div>
 
-      <a class="footer-link" href="https://github.com/TimurLagawy"
-        >Timur Lagawy</a
-      >
-    </div>
-  </footer> <script src="script.js"></script>
+        <a class="footer-link" href="https://github.com/TimurLagawy"
+          >Timur Lagawy</a
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
