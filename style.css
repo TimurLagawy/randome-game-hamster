@@ -350,4 +350,8 @@
   .hamster {
     left: -5px;
   }
+
+  .header {
+    text-wrap: nowrap;
+  }
 }
