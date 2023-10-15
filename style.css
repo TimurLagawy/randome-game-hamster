@@ -170,6 +170,11 @@
   white-space: nowrap;
 }
 
+.winner-your {
+  white-space: nowrap;
+  font-size: 20px;
+}
+
 .winner-congrats__button {
   position: absolute;
   top: 310px;
