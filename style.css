@@ -266,6 +266,7 @@
   width: 50px;
   top: 150px;
   text-align: center;
+  border: solid 1px black;
 }
 
 .another-game__btn {
@@ -274,7 +275,7 @@
 }
 
 .space {
-  min-height: 30px;
+  min-height: 15px;
 }
 
 .footer {

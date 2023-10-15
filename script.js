@@ -60,12 +60,15 @@ function visiblePole() {
   if (level == 6) {
     document.querySelector("#medium").classList.remove("open1");
     document.querySelector("#hard").classList.remove("open1");
+    heightSpace();
   } else if (level == 9) {
     document.querySelector("#medium").classList.add("open1");
     document.querySelector("#hard").classList.remove("open1");
+    heightSpace();
   } else if (level == 12) {
     document.querySelector("#medium").classList.add("open1");
     document.querySelector("#hard").classList.add("open1");
+    heightSpace();
   }
 }
 visiblePole();
@@ -394,3 +397,11 @@ function addResults() {
   document.querySelector("#res10").innerHTML = res10;
 }
 addResults();
+function heightSpace() {
+  if (document.querySelector("#main").offsetHeight > 500) {
+    document.querySelector("#space").style.height = 30 + "px";
+  } else {
+    document.querySelector("#space").style.height =
+      510 - document.querySelector("#main").offsetHeight + "px";
+  }
+}
